@@ -28,3 +28,9 @@ def publishers(request):
 
 
     return render(request, 'publishers.html', context)
+def advertisers(request):
+    context = {}
+    
+
+
+    return render(request, 'advertiser.html', context)
