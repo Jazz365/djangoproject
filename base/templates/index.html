@@ -18,7 +18,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6 col-sm-6"><div class="padding12LR">
-<h3>SWIFT Revenue sit amet, <span>consectetur</span></h3>
+  <h3>{{ home_page.slider3_heading }} <span>{{ home_page.slider3_heading_colored }}</span></h3>
 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
 <a href="" class="link">Advertise with Swift-Revenue</a>
 </div></div>
@@ -46,13 +46,31 @@
 <div class="curveDesign">
 <div class="row verticallyParent">
 <div class="col-md-5 col-sm-6 verticallyMainChild">
-<div class="curve426">
-<div class="postion1"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
-<div class="postion1 postion2"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
-<div class="postion1 postion3"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
-<div class="postion1 postion4"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
-<div class="postion1 postion5"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
-<div class="postion1 postion6"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
+<div class="curve426" style="background:url('{% static 'images/tab-box.png' %}');">
+<div class="postion1"><a href="#tab1">
+                              {{ home_page.who_we_1_heading }}
+                              <img src="{{ home_page.who_we_1_img.url | default:'#'}}" />
+                            </a></div>
+<div class="postion1 postion2"> <a href="#tab2">
+                              {{ home_page.who_we_2_heading }}
+                              <img src="{{ home_page.who_we_2_img.url | default:'#'}}" />
+                            </a></div>
+<div class="postion1 postion3"> <a href="#tab3">
+                              {{ home_page.who_we_3_heading }}
+                              <img src="{{ home_page.who_we_3_img.url | default:'#'}}" />
+                            </a></div>
+<div class="postion1 postion4">  <a href="#tab4">
+                              <img src="{{ home_page.who_we_4_img.url | default:'#'}}" />
+                              {{ home_page.who_we_4_heading }}
+                            </a></div>
+<div class="postion1 postion5"><a href="#tab5">
+                              <img src="{{ home_page.who_we_5_img.url | default:'#'}}" />
+                              {{ home_page.who_we_5_heading }}
+                            </a></div>
+<div class="postion1 postion6"><a href="#tab6">
+                              <img src="{{ home_page.who_we_6_img.url | default:'#'}}" />
+                              {{ home_page.who_we_6_heading }}
+                            </a></div>
 </div>
 </div>
 <div class="col-md-7 col-sm-6 verticallyMainChild">
