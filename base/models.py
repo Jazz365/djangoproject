@@ -181,7 +181,6 @@ class Publisher(models.Model):
         return 'Publishers Page'
     
  class Advertiser(models.Model):
-    
     advertiser_text = models.CharField(max_length=200, blank=True, null=True)
 
     topinfoPara = models.CharField(max_length=200, blank=True, null=True)
