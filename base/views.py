@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Home, SavedEmail, Publisher
+from .models import Home, SavedEmail, Publisher, Advertiser
 
 
 # Create your views here.
@@ -30,6 +30,8 @@ def publishers(request):
     return render(request, 'publishers.html', context)
 def advertisers(request):
     context = {}
+    advertiser, created = Advertiser.objects.get_or_create(id=1)
+    context['i'] = advertiser
     
 
 
