@@ -1,0 +1,304 @@
+
+<html>
+<head>
+<title>Swift Revnue</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+<link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet"  type="text/css"/>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+	var element = document.getElementById("closeBTN");
+    element.classList.add("offAsAdd");
+
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	var element = document.getElementById("closeBTN");
+    element.classList.remove("offAsAdd");
+}
+
+
+
+</script>
+
+
+</head>
+<body>
+<!-----On Scrolll---->
+
+<!----On Scroll End---->
+
+<div class="wrapper">
+
+<!---<div class="topBarStripe">
+<div class="container">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b><a href="">Get In Touch</a></b>.
+</div>
+<a href="javascript:void(0)" class="closebtnTop"></a>
+</div>--->
+<div class="mainBG mainBGInner">
+<div class="menuBar">
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-sm-4"><img src="{% static 'images/logo.png' %}" class="logoSite" />
+
+</div>
+<div class="col-md-8 col-sm-8">
+<div id="mySidenav" class="sidenav"><div class="callICRes slideMenu"><a style="color:#fff;" href="#">Call</a></div>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+<div class="navigation">
+<ul>
+<li><a href="{% url 'home' %}">Home</a></li>
+<li><a href="#">Agency</a></li>
+<li><a href="#">Affiliates</a></li>
+<li><a href="{% url 'advertisers' %}">Advertisers</a></li>
+<li><a href="{% url 'publishers' %}">Publishers</a></li>
+<li><a href="./company.html">Company</a>
+<ul>
+<li><a href="./traffic.html">Traffic</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hideOnres09">
+<!--<li><a href="#" class="searchClick"></a></li>-->
+<li class="menu-item-40"><a href="./signup.html">Sign In</a></li>
+</ul>
+</div>
+</div>
+<span style="font-size:30px;cursor:pointer; z-index:999; float:right; color:#000; font-weight:bold;" id="closeBTN" class="openBTN" onclick="openNav()"></span>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="bannerPart">
+
+{% block pageheadings %}
+
+          {% endblock %}
+
+</div>
+
+
+</div>
+        {% block content %}
+          {% endblock %}
+
+
+<div class="mainFooter">
+<div class="container">
+<h2>Connect <span>With Us</span> <br>
+Want to connect with the team?</h2>
+<p class="rightpdpr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<ul class="inlineBtns">
+<li><a href="" class="numbertext">12-345-6789</a></li>
+<li><a href="" class="link">Contact Us</a></li>
+</ul>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<ul class="footerAdd">
+<li><a href="">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor</a></li>
+<li><a href="mailto:email@swiftrevenue.com" class="emailI">email@swiftrevenue.com</a></li>
+</ul>
+</div>
+<div class="col-md-6 col-sm-12 uptoDate">
+<h2>Stay up to date!</h2>
+<div class="newsletterF">
+<input type="email" placeholder="Email address" />
+<input type="submit" value="Subscribe" />
+</div>
+</div>
+</div>
+</div>
+<div class="logoAndLinks">
+<div class="container">
+<img src="images/rev-logo.png" />
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<ul class="footerLinks">
+<li><a href="">Affiliate</a></li>
+<li><a href="./traffic.html">Traffic Types</a></li>
+<li><a href="./advertisers.html">Advertiser</a></li>
+<li><a href="">Career</a></li>
+<li><a href="">Knowledge Base</a></li>
+<li><a href="">About Us</a></li>
+<li><a href="">Privacy Policy</a></li>
+<li><a href="./contact.html">Contact Support</a></li>
+</ul>
+</div>
+<div class="col-md-6 col-sm-6">
+<h2>Become an <span>Affiliate</span></h2>
+<a href="" class="link">Register Now</a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="copyrightSec">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-12 textLeft">
+<ul class="logoSocialF">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-12 rightTextF">
+<p>Â© All Rights Reserved - SwiftRevenue - 2022</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script>
+    $(document).ready(function() {
+      //Sort random function
+      function random(owlSelector){
+        owlSelector.children().sort(function(){
+            return Math.round(Math.random()) - 0.5;
+        }).each(function(){
+          $(this).appendTo(owlSelector);
+        });
+      }
+
+      $("#ourClients").owlCarousel({
+        navigation: true,
+		items:1,
+itemsDesktop : [1000,1], // 2 items between 1000px and 901px
+  itemsDesktopSmall : [900,1], // betweem 900px and 601px
+  itemsTablet: [700,1], // 2 items between 600 and 480
+  itemsMobile : [479,1] , // 1 item between 479 and 0
+        navigationText: [
+          "<i class='icon-chevron-left icon-white'></i>",
+          "<i class='icon-chevron-right icon-white'></i>"
+          ],
+        beforeInit : function(elem){
+          //Parameter elem pointing to $("#owl-demo")
+          //random(elem);
+        }
+
+      });
+
+
+    });
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 220) {
+        //clearHeader, not clearheader - caps H
+        $(".stickyHeader").addClass("stickyHeaderActive");
+    }
+	else {
+	$(".stickyHeader").removeClass("stickyHeaderActive");
+	}
+}); //missing );
+
+
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+
+
+	</script>
+
+<script>
+
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+*******************************/
+	function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-plus glyphicon-minus');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
+
+
+	// Show the first tab and hide the rest
+$('#tabs-nav li:first-child').addClass('activeShadow');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+// Click function
+$('#tabs-nav li').mouseenter(function(){
+  $('#tabs-nav li').removeClass('activeShadow');
+  $(this).addClass('activeShadow');
+  $('.tab-content').hide();
+
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
