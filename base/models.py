@@ -139,7 +139,7 @@ class Publisher(models.Model):
     r1_image = models.ImageField(upload_to='images/', blank=True, null=True)
     topinfoHeading_r2 = models.CharField(max_length=200, blank=True, null=True)
     r2_image = models.ImageField(upload_to='images/', blank=True, null=True)
-    topinfoHeading_r3 = models.URLField(blank=True, null=True)
+    topinfoHeading_r3 =  models.CharField(max_length=200, blank=True, null=True)
     r3_image = models.ImageField(upload_to='images/', blank=True, null=True)
     topinfoHeading_r4 = models.CharField(max_length=200, blank=True, null=True)
     r4_image = models.ImageField(upload_to='images/', blank=True, null=True)
@@ -153,7 +153,7 @@ class Publisher(models.Model):
     topinfoHeading_l2 = models.CharField(max_length=200, blank=True, null=True)
     l2_image = models.ImageField(upload_to='images/', blank=True, null=True)
 
-    topinfoHeading_l3 = models.URLField(blank=True, null=True)
+    topinfoHeading_l3 =  models.CharField(max_length=200, blank=True, null=True)
     l3_image = models.ImageField(upload_to='images/', blank=True, null=True)
 
     topinfoHeading_l4 = models.CharField(max_length=200, blank=True, null=True)
@@ -161,10 +161,10 @@ class Publisher(models.Model):
 
     businessModel2_main = models.CharField(max_length=200, blank=True, null=True)
 
-    businessModel2_point1 = models.CharField(max_length=50, blank=True, null=True)
+    businessModel2_point1 = models.CharField(max_length=500, blank=True, null=True)
     point1_image = models.ImageField(upload_to='images/', blank=True, null=True)
 
-    businessModel2_point2 = models.CharField(max_length=50, blank=True, null=True)
+    businessModel2_point2 = models.CharField(max_length=500, blank=True, null=True)
     point2_image1 = models.ImageField(upload_to='images/', blank=True, null=True)
     point2_image2 = models.ImageField(upload_to='images/', blank=True, null=True)
     point2_image3 = models.ImageField(upload_to='images/', blank=True, null=True)
@@ -172,8 +172,8 @@ class Publisher(models.Model):
     point2_image5 = models.ImageField(upload_to='images/', blank=True, null=True)
     point2_image6 = models.ImageField(upload_to='images/', blank=True, null=True)
 
-    topSpace_heading = models.CharField(max_length=50, blank=True, null=True)
-    topSpace_text = models.CharField(max_length=50, blank=True, null=True)
+    topSpace_heading = models.CharField(max_length=500, blank=True, null=True)
+    topSpace_text = models.CharField(max_length=500, blank=True, null=True)
 
 
 
