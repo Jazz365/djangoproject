@@ -31,7 +31,7 @@ function closeNav() {
 
 
 </head>
-<body>
+<body style="background-color:#e6f2ff;">
 <!-----On Scrolll---->
 
 <!----On Scroll End---->
@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b><a href="">Get In To
 </div>
 <a href="javascript:void(0)" class="closebtnTop"></a>
 </div>--->
-<div class="mainBG mainBGInner">
+<div class="mainBG mainBGInner" style="background:url('{% static 'images/top-banner-bg.png' %}');">
 <div class="menuBar">
 <div class="container">
 <div class="row">
@@ -85,7 +85,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b><a href="">Get In To
 
 
 
-<div class="bannerPart">
+<div class="bannerPart" >
 
 {% block pageheadings %}
 
@@ -95,12 +95,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b><a href="">Get In To
 
 
 </div>
-        {% block content %}
+
+      {% block content %}
           {% endblock %}
 
 
-<div class="mainFooter">
-<div class="container">
+
+
+
+<div class="mainFooter" style="background:url('{% static 'images/footer-bg1.png' %}');">
+<div class="container" >
 <h2>Connect <span>With Us</span> <br>
 Want to connect with the team?</h2>
 <p class="rightpdpr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
