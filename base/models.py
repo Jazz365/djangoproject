@@ -179,3 +179,43 @@ class Publisher(models.Model):
 
     def __str__(self):
         return 'Publishers Page'
+    
+    
+    class Publisher(models.Model):
+    
+    advertiser_text = models.CharField(max_length=200, blank=True, null=True)
+
+    topinfoPara = models.CharField(max_length=200, blank=True, null=True)
+
+    secondParagraph_heading = models.CharField(max_length=200, blank=True, null=True)
+    secondParagraph = models.CharField(max_length=200, blank=True, null=True)
+
+
+    tab_text1 = models.CharField(max_length=200, blank=True, null=True)
+    tab_image1 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    tab_text2 = models.CharField(max_length=200, blank=True, null=True)
+    tab_image2 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    tab_text3= models.CharField(max_length=200, blank=True, null=True)
+    tab_image3 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    tab_text4 = models.CharField(max_length=200, blank=True, null=True)
+    tab_image4 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    tab_text5 = models.CharField(max_length=200, blank=True, null=True)
+    tab_image5 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    tab_text6 = models.CharField(max_length=200, blank=True, null=True)
+    tab_image6 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    thirdParagraph_heading = models.CharField(max_length=200, blank=True, null=True)
+    thirdParagraph = models.CharField(max_length=200, blank=True, null=True)
+
+
+
+
+
+
+    def __str__(self):
+        return 'Advertiser Page'
