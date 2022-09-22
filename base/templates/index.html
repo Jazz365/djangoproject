@@ -1,272 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Revenue</title>
-    {% load static %}
-    <!--slick css-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-css.css' %}">
-    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!-- external css -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <!-- header section -->
-    <header>
-        <div class="header-bottom-wrapper">
-          <div class="container">
-            <div class="header-bottom-row">
-              <div class="header-logo">
-                <a href=""><img src="{% static 'images/logo.png' %}" alt="site-logo"></a>
-              </div>
-              <div class="header-nav-links">
-                <ul>
-                  <li><a href="">home</a></li>
-                  
-                  <li><a href="">agency</a></li>
-                  <li><a href="">affiliates</a></li>
-                  <li><a href="">advertisers</a></li>
-                  <li><a href="{% url 'publishers' %}">publishers</a></li>
-                  <li class="dropdown">
-                    <a href="">
-                       company 
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                    </a>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="mobile-btn">
-                    <a href="" class="primary-btn">
-                      sign in
-                      
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars bar-icon"></i>
-              <i class="fas fa-times cross"></i>
-              </a>
-              <div class="header-btn">
-                <a href="" class="primary-btn">
-                 sign in
-                 
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    <!-- header section ends -->
-    <!-- Banner sec -->
-    <section class="banner-sec">
-        <div class="container">
-            <div class="inner-wrapper">
-                <div class="text-col">
-                    <h1>SWIFT Revenue<br>
-                        sit amet, <span class="text-primary">consectetur</span></h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>
-                            doloremque laudantium, totam rem aperiam.</p>
-                            <a href="" class="primary-btn">Advertise with Swift-Revenue <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg></a>
-                </div>
-                <div class="img-col">
-                    <img src="./images/banner-img.png" alt="person with screen">
-                </div>
-            </div>
-        </div>
+      {% extends 'base.html' %}
+       {% load static %}
 
-    </section>
-    <!-- banner sec ends -->
-    <!-- who-we-are sec -->
-    <section class="who-sec">
-        <div class="container">
-            <h2>who <span>we are</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-            <div class="inner-wrapper">
 
-            </div>
-        </div>
-    </section>
-    <!-- who-we-are sec ends -->
-    <!-- slider sec -->
-    <section class="slider-sec">
-        <div class="container">
-            <div class="sec-head text-center">
-                <h2>Accusantium <span class="text-primary">Doloremque</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="slider-col">
-            <div class="sldier-wrapper">
-                <div class="slider-box">
-                    <p><i>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>
-                        doloremque laudantium, totam rem aperiam.”</i></p>
-                        <h6>Perspiciatis Unde</h6>
-                        <p>Sed, Perspiciatis unde omnis</p>
-                        <div class="slider-img">
-                            <img src="./images/test-img.png" alt="slider-image">
-                        </div>
-                </div>
-                <div class="slider-box">
-                    <p><i>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>
-                        doloremque laudantium, totam rem aperiam.”</i></p>
-                        <h6>Perspiciatis Unde</h6>
-                        <p>Sed, Perspiciatis unde omnis</p>
-                        <div class="slider-img">
-                            <img src="./images/test-img.png" alt="slider-image">
-                        </div>
-                </div>
-            </div>
-              </div>
-              
-        </div>
-    </section>
-    <!-- slider sec ends -->
-    <!-- advertiser sec -->
-    <section class="advertiser-sec">
-      <div class="container">
-        <div class="flex-row">
-          <div class="sec-head">
-            <h2>Swift-Revenue <span class="text-primary">Affiliates</span> and<br>
-              Advertisers</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua.</p>
-          </div>
-          <div class="register-btn">
-            <a href="" class="primary-btn">register now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg></a>
-          </div>
-        </div>
-        <div class="advertiser-flex-row">
-          <div class="advertiser-col">
-              <img src="./images/ad-img-1.png" alt="ad-img">
-              <h5>Coluptatem doloremque</h5>
-              <p>Lorem ipsum dolor sit amet,<br>
-                consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore .</p>
-          </div>
-          <div class="advertiser-col">
-            <img src="./images/ad-img-2.png" alt="ad-img">
-            <h5>Coluptatem doloremque</h5>
-            <p>Lorem ipsum dolor sit amet,<br>
-              consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore .</p>
-        </div>
-        <div class="advertiser-col">
-          <img src="./images/ad-img-3.png" alt="ad-img">
-          <h5>Coluptatem doloremque</h5>
-          <p>Lorem ipsum dolor sit amet,<br>
-            consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore .</p>
-      </div>
-      <div class="advertiser-col">
-        <img src="./images/ad-img-4.png" alt="ad-img">
-        <h5>Coluptatem doloremque</h5>
-        <p>Lorem ipsum dolor sit amet,<br>
-          consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore .</p>
-    </div>
-        </div>
-      
-      </div>
-    </section>
-    
-    <!-- advertiser sec ends -->
-    <!-- connect sec -->
-    <section class="contact-sec">
-      <div class="container">
-        <h2>Connect <span class="text-primary">With Us</span><br>
-          Want to connect with the team?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</p>
-          <div class="contact-row">
-          <div class="contact-left">
-            <div class="contact-box">
-              <h2 ><a href="tel:12-345-6789" class="text-primary">12-345-6789</a></h2>
-              <a href="" class="secondary-btn">contact us <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg></a>
-            </div>
-            <div class="flex-row">
-              <img src="./images/globe.png" alt="globe-img">
-              <p>Lorem ipsum dolor sit amet, consectetur elit, sed do<br> eiusmod tempor</p>
-            </div>
-            <div class="flex-row">
-              <img src="./images/email.png" alt="email-img">
-              <p>email@swiftrevenue.com</p>
-            </div>
-            
-          </div>
-          <div class="contact-right">
-            <h3>Stay up to date!</h3>
-            <div class="subscribe-box">
-              <input type="text" placeholder="E-mail address">
-              <a href="" class="primary-btn">Subscribe</a>
-            </div>
-           
-          </div>
-        </div>
-          
-          
-      </div>
-    </section>
-    <!-- connect sec ends-->
-    <!-- footer sec -->
-    <section class="footer-sec">
-        <div class="container">
-            <div class="inner-wrapper">
-                <div class="footer-left-col">
-                    <img src="./images/logo.png" alt="">
-                    <div class="footer-links">
-                    <ul>
-                        <li><a href="">affiliate</a></li>
-                        <li><a href="">advertiser</a></li>
-                        <li><a href="">knowledge base</a></li>
-                        <li><a href="">privacy policy</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">affiliate</a></li>
-                        <li><a href="">advertiser</a></li>
-                        <li><a href="">knowledge base</a></li>
-                        <li><a href="">privacy policy</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="footer-right-col">
-                    <h3>Become an <span class="text-primary">Affiliate</span>
-                    </h3>
-                    <a href="" class="primary-btn">register now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg></a>
-                </div>
-            </div>
-            <div class="footer-bottom-row">
-                <div class="icon-row">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                </div>
-                <div class="copyright-text">
-                    <p>© All Rights Reserved - SwiftRevenue - 2022</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- footer sec ends -->
+<div class="bannerPart">
+
+{% block pageheadings %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!--<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
+    <li data-target="#myCarousel" data-slide-to="1">2</li>
+  </ol>-->
+
+  <!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6"><div class="padding12LR">
+<h3>SWIFT Revenue sit amet, <span>consectetur</span></h3>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
+<a href="" class="link">Advertise with Swift-Revenue</a>
+</div></div>
+<div class="col-md-6 col-sm-6 centerSliderImage">
+<img src="{% static 'images/banner-img.png' %}" />
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+          {% endblock %}
+
+
+</div>
+{% block content %}
+
+<div class="iTsupport h2Font">
+<div class="container">
+<h2>Who <span>We Are</span></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+<div class="curveDesign">
+<div class="row verticallyParent">
+<div class="col-md-5 col-sm-6 verticallyMainChild">
+<div class="curve426">
+<div class="postion1"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
+<div class="postion1 postion2"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
+<div class="postion1 postion3"><a href="#">Perspiciatis Unde <img src="images/3.png" /></a></div>
+<div class="postion1 postion4"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
+<div class="postion1 postion5"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
+<div class="postion1 postion6"><a href="#"><img src="images/3.png" /> Perspiciatis Unde</a></div>
+</div>
+</div>
+<div class="col-md-7 col-sm-6 verticallyMainChild">
+ <div class="row">
+  <div class="col-md-6 col-sm-12">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+  <div class="rightBox">
+  <img src="images/2.png" />
+  <h6>voluptatem accusa doloremque</h6>
+  <a href="" class="link">Register Now</a>
+  </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="clients-help h2Font">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<h2>Accusantium <span>Doloremque</span></h2>
+<div class="pFont"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+<div class="skyBlueBG">
+<div id="ourClients" class="owl-carousel owl-theme">
+<div class="item">
+<img src="images/test-img.png" />
+<p>â€œSed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.â€</p>
+<div class="namePosition">
+<h6>Perspiciatis Unde <span>Sed, Perspiciatis unde omnis</span></h6>
+</div>
+</div>
+<div class="item">
+<p>â€œUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.â€</p>
+<div class="namePosition">
+<h6>Dominic Coleman <span>Product Designer</span></h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
 
 
 
+<div class="swiftrevenue">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-8">
+<h2>Swift-Revenue <span>Affiliates</span> and <br>
+Advertisers</h2>
+</div>
+<div class="col-md-4 col-sm-4">
+<a href="" class="link">Register Now</a>
+</div>
+</div>
+</div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   
-    <script src="{% static 'js/slick-script.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
-</body>
-</html>
+
+{% endblock %}
