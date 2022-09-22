@@ -180,7 +180,7 @@ class Publisher(models.Model):
     def __str__(self):
         return 'Publishers Page'
     
- class Advertiser(models.Model):
+class Advertiser(models.Model):
     advertiser_text = models.CharField(max_length=200, blank=True, null=True)
 
     topinfoPara = models.CharField(max_length=200, blank=True, null=True)
