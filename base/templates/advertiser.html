@@ -5,7 +5,7 @@
     {% block pageheadings %}
 <div class="padding12LR">
     <h1>Advertisers </h1>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
+<p>{{i.advertiser_text|slice:":20"}}<br>{{i.advertiser_text|slice:"20:"}}</p>
 <a href="" class="link">Get An Account</a>
 </div>
           {% endblock %}
@@ -19,33 +19,30 @@
 <div class="container">
 <div class="d-flex justify-content-center width full p-8">
 
-    <p>some thing in this container to test hte design skills of mine some thing in this container to test hte design skills of mine some <br>
-        thing in this container to test hte design skills of mine<br>some thing in this container to test hte design skills of mine</p>
+    <p>{{i.topinfoPara|slice:":20"}}<br>{{i.topinfoPara|slice:"20:"}}</p>
 <br><br><br>
 <div class="container">
-<h2>Consectetur <span>Adipiscing elit</span></h2>
-<p>some thing in this container to test hte design skills of mine some thing in this container to test hte design skills of mine some <br>
-        thing in this container to test hte design skills of mine<br>some thing in this container to test hte design skills of mine</p>
+<h2>{{i.secondParagraph_heading}}t</span></h2>
+<p>{{i.secondParagraph|slice:":20"}<br>{{i.secondParagraph|slice:"20:"}}}</p>
 <br><br><br>
     <br>
     <div><br><br><br><br><br><br><br><br>
 
 <div class="text-center curve426" style="background:url('{% static 'images/tab-box.png' %}');">
-<div class="postion1"><a href="#">Perspiciatis Unde <img src="{% static 'images/3.png' %}" /></a></div>
-<div class="postion1 postion2"><a href="#">Perspiciatis Unde <img src="{% static 'images/3.png' %}" /></a></div>
-<div class="postion1 postion3"><a href="#">Perspiciatis Unde <img src="{% static 'images/3.png' %}" /></a></div>
-<div class="postion1 postion4"><a href="#"><img src="{% static 'images/3.png' %}" /> Perspiciatis Unde</a></div>
-<div class="postion1 postion5"><a href="#"><img src="{% static 'images/3.png' %}" /> Perspiciatis Unde</a></div>
-<div class="postion1 postion6"><a href="#"><img src="{% static 'images/3.png' %}" /> Perspiciatis Unde</a></div>
+<div class="postion1"><a href="#">{{i.tab_text1}} <img src="{{i.tab_image1.url}}" /></a></div>
+<div class="postion1 postion2"><a href="#">{{i.tab_text2}}<img src="{{i.tab_image2.url}}" /></a></div>
+<div class="postion1 postion3"><a href="#">{{i.tab_text3}} <img src="{{i.tab_image3.url}}" /></a></div>
+<div class="postion1 postion4"><a href="#"><img src="{{i.tab_image4.url}}" /> {{i.tab_text4}}</a></div>
+<div class="postion1 postion5"><a href="#"><img src="{{i.tab_image5.url}}" /> {{i.tab_text5}}</a></div>
+<div class="postion1 postion6"><a href="#"><img src="{{i.tab_image6.url}}" /> {{i.tab_text6}}</a></div>
 </div>
 
 
     </div>
 <div class="container">
     <br><br><br><br><br><br><br><br>
-<h2>Consectetur <span>Adipiscing elit</span></h2>
-<p>some thing in this container to test hte design skills of mine some thing in this container to test hte design skills of mine some <br>
-        thing in this container to test hte design skills of mine<br>some thing in this container to test hte design skills of mine</p>
+<h2>{{i.thirdParagraph_heading}}</h2>
+<p>{{i.thirdParagraph|slice:":20"}}<br>{{i.thirdParagraph|slice:"20:"}}</p>
 <br><br><br>
     <br>
     <div>
