@@ -51,11 +51,11 @@ function closeNav() {
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
 <div class="navigation">
 <ul>
-<li><a href="#">Home</a></li>
+<li><a href="{% url 'home' %}">Home</a></li>
 <li><a href="#">Agency</a></li>
 <li><a href="#">Affiliates</a></li>
-<li><a href="./advertisers.html">Advertisers</a></li>
-<li><a href="./publishers.html">Publishers</a></li>
+<li><a href="{% url 'advertisers' %}">Advertisers</a></li>
+<li><a href="{% url 'publishers' %}">Publishers</a></li>
 <li><a href="./company.html">Company</a>
 <ul>
 <li><a href="./traffic.html">Traffic</a></li>
