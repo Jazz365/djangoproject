@@ -1,53 +1,222 @@
- {% extends 'base.html' %}
+{% extends 'base.html' %}
        {% load static %}
 
+      {% block pageheading %}
 
-    {% block pageheadings %}
 <div class="padding12LR">
-    <h1>Advertisers </h1>
+<h1>Advertisers</h1>
 <p>{{i.advertiser_text|slice:":20"}}<br>{{i.advertiser_text|slice:"20:"}}</p>
 <a href="" class="link">Get An Account</a>
 </div>
-          {% endblock %}
+{% endblock %}
+
+{% block content %}
 
 
-
-      {% block content %}
-
-
-     <div class="d-flex justify-content-center text-center" style="background:url('{% static 'images/bubble-section-bg.png' %}');">
+<div class="businessModel">
 <div class="container">
-<div class="d-flex justify-content-center width full p-8">
-
-    <p>{{i.topinfoPara|slice:":20"}}<br>{{i.topinfoPara|slice:"20:"}}</p>
-<br><br><br>
-<div class="container">
-<h2>{{i.secondParagraph_heading}}t</span></h2>
+<div class="sEPcontainer noBorder">
+<div class="pWidthfix">
+<p>{{i.topinfoPara|slice:":20"}}<br>{{i.topinfoPara|slice:"20:"}}</p>
+</div>
+<div class="fourColumn">
+<h2>{{i.secondParagraph_heading}}</h2>
 <p>{{i.secondParagraph|slice:":20"}}<br>{{i.secondParagraph|slice:"20:"}}</p>
-<br><br><br>
-    <br>
-    <div><br><br><br><br><br><br><br><br>
+  <div class="row topspace">
+<div class="col-md-3 col-sm-6">
+<div class="boxOne31" style="background:url('images/icon-11.png');">
+<h3>1K+</h3>
+<p>Coluptatem doloremque</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="boxOne31" style="background:url('images/icon-2.png');">
+<h3>10K+</h3>
+<p>Eiusmod tempor </p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="boxOne31" style="background:url('images/icon-3.png');">
+<h3>24·7·365</h3>
+<p>Magna aliqua</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="boxOne31" style="background:url('images/icon-4.png');">
+<h3>100%</h3>
+<p>Perspiciatis unde</p>
+</div>
+</div>
+</div>
 
-<div class="text-center curve426" style="background:url('{% static 'images/tab-box.png' %}');">
-<div class="postion1"><a href="#">{{i.tab_text1}} <img src="{{i.tab_image1.url}}" /></a></div>
-<div class="postion1 postion2"><a href="#">{{i.tab_text2}}<img src="{{i.tab_image2.url}}" /></a></div>
-<div class="postion1 postion3"><a href="#">{{i.tab_text3}} <img src="{{i.tab_image3.url}}" /></a></div>
-<div class="postion1 postion4"><a href="#"><img src="{{i.tab_image4.url}}" /> {{i.tab_text4}}</a></div>
-<div class="postion1 postion5"><a href="#"><img src="{{i.tab_image5.url}}" /> {{i.tab_text5}}</a></div>
-<div class="postion1 postion6"><a href="#"><img src="{{i.tab_image6.url}}" /> {{i.tab_text6}}</a></div>
 </div>
 
 
-    </div>
-<div class="container">
-    <br><br><br><br><br><br><br><br>
-<h2>{{i.thirdParagraph_heading}}</h2>
-<p>{{i.thirdParagraph|slice:":20"}}<br>{{i.thirdParagraph|slice:"20:"}}</p>
-<br><br><br>
-    <br>
-    <div>
+</div>
 
-<div class="topSpace56">
+
+
+<div class="iTsupport h2Font tab-sec">
+<div class="container">
+<h2>Who <span>We Are</span></h2>
+<p>{{i.thirdParagraph|slice:":20"}}<br>{{i.thirdParagraph|slice:"20:"}}</p>
+  <div class="curveDesign">
+<div class="row ">
+  <div class="col-md-12 col-sm-12 verticallyMainChild">
+<div class="curve426 curve426advertise">
+<div class="tabs">
+  <ul id="tabs-nav">
+ <li><div class="postion1 tab-img1"><a href="#tab1">Perspiciatis Unde <img src="images/tab-icon.png" /></a></div></li>
+ <li><div class="postion1 postion2"><a href="#tab2">Perspiciatis Unde <img src="images/tab-icon.png" /></a></div></li>
+ <li><div class="postion1 postion3"><a href="#tab3">Perspiciatis Unde <img src="images/tab-icon.png" /></a></div></li>
+ <li><div class="postion1 postion4"><a href="#tab4"><img src="images/tab-icon.png" /> Perspiciatis Unde</a></div></li>
+ <li><div class="postion1 postion5"><a href="#tab5"><img src="images/tab-icon.png" /> Perspiciatis Unde</a></div></li>
+ <li><div class="postion1 postion6"><a href="#tab6"><img src="images/tab-icon.png" /> Perspiciatis Unde</a></div> </li>
+</div>
+
+<div id="tabs-content">
+  <div id="tab1" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  <div id="tab2" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  <div id="tab3" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  <div id="tab4" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  <div id="tab5" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  <div id="tab6" class="tab-content">
+  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+  </div>
+  </div>
+ <!-- END tabs-content -->
+</div> <!-- END tabs -->
+</div>
+
+<!-- <div class="col-md-5 col-sm-12 verticallyMainChild">
+<div id="tabs-content">
+<div id="tab1" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab2" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab3" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab4" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab5" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab6" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+</div>
+
+</div> -->
+
+ </div>
+</div>
+</div>
+</div>
+
+
+<!-- consectetur sec -->
+<section class="consectetur-sec h2Font">
+  <div class="container">
+    <h2>Consectetur</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</p>
+    <div class="row consectetur-row">
+      <div class="col-sm-4 consectetur-col">
+        <img src="./images/list-icon-1.png" alt="">
+        <h4>voluptatem accusa<br>
+          doloremque</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod<br> tempor incididunt.</p>
+      </div>
+      <div class="col-sm-4 consectetur-col">
+        <img src="./images/list-icon-2.png" alt="">
+        <h4>voluptatem accusa<br>
+          doloremque</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod <br>tempor incididunt.</p>
+      </div>
+      <div class="col-sm-4 consectetur-col">
+        <img src="./images/list-icon-3.png" alt="">
+        <h4>voluptatem accusa<br>
+          doloremque</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod<br> tempor incididunt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- consectetur sec ends-->
+<!-- client-sec -->
+<section class="client-sec">
+  <div class="container">
+    <div class="sec-head">
+      <h6>Client Story</h6>
+      <h2>Hear from trusted clients</h2>
+    </div>
+    
+    <div id="client-wrapper" >
+      <div class="row client-wrapper">
+        <div class="col-sm-6 col-wrapper">
+          <div class="client-col">
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco” </p>
+          <div class="author-row">
+            <img src="./images/author-img.jpg" alt="author-img">
+            <div class="author-info">
+              <h5> Alonso D. Dowson</h5>
+              <p>Head Of Idea,<span class="text-red"> Alonso Co.</span></p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-wrapper">
+          <div class="client-col">
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco” </p>
+          <div class="author-row">
+            <img src="./images/author-img.jpg" alt="author-img">
+            <div class="author-info">
+              <h5> Alonso D. Dowson</h5>
+              <p>Head Of Idea,<span class="text-red"> Alonso Co.</span></p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-wrapper">
+          <div class="client-col">
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco” </p>
+          <div class="author-row">
+            <img src="./images/author-img.jpg" alt="author-img">
+            <div class="author-info">
+              <h5> Alonso D. Dowson</h5>
+              <p>Head Of Idea,<span class="text-red"> Alonso Co.</span></p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- client-sec ends-->
+
+
+
+</div>
+</div>
+
+<div class="businessModel2 mt0">
+<div class="container">
+
+<div class="topSpace56 mt0">
 <div class="row">
 <div class="col-md-9 col-sm-8">
 <h2>Lorem ipsum dolor <span>adipiscing elit</span> sed do eiusmod tempor</h2>
@@ -61,12 +230,6 @@
 
 </div>
 </div>
-</div>
-</div>
 
+{% endblock %}
 
-</div>
-
-
-
-          {% endblock %}
