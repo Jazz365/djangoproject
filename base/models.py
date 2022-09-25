@@ -187,28 +187,90 @@ class Advertiser(models.Model):
 
     secondParagraph_heading = models.CharField(max_length=200, blank=True, null=True)
     secondParagraph = models.CharField(max_length=200, blank=True, null=True)
+    
+    topspace1_heading=models.CharField(max_length=200, blank=True, null=True)
+    topspace1_text=models.CharField(max_length=200, blank=True, null=True)
+    topspace1_image= models.ImageField(upload_to='images/advertiser', blank=True, null=True)
 
+    topspace2_heading = models.CharField(max_length=200, blank=True, null=True)
+    topspace2_text = models.CharField(max_length=200, blank=True, null=True)
+    topspace2_image = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    topspace3_heading = models.CharField(max_length=200, blank=True, null=True)
+    topspace3_text = models.CharField(max_length=200, blank=True, null=True)
+    topspace3_image = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    topspace4_heading = models.CharField(max_length=200, blank=True, null=True)
+    topspace4_text = models.CharField(max_length=200, blank=True, null=True)
+    topspace4_image = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+
+    
+    who_we_are=models.CharField(max_length=200, blank=True, null=True)
+    who_we_are_description=models.CharField(max_length=500, blank=True, null=True)
 
     tab_text1 = models.CharField(max_length=200, blank=True, null=True)
     tab_image1 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content1 = models.CharField(max_length=200, blank=True, null=True)
 
     tab_text2 = models.CharField(max_length=200, blank=True, null=True)
     tab_image2 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content2 = models.CharField(max_length=200, blank=True, null=True)
 
     tab_text3= models.CharField(max_length=200, blank=True, null=True)
     tab_image3 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content3 = models.CharField(max_length=200, blank=True, null=True)
 
     tab_text4 = models.CharField(max_length=200, blank=True, null=True)
     tab_image4 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content4 = models.CharField(max_length=200, blank=True, null=True)
 
     tab_text5 = models.CharField(max_length=200, blank=True, null=True)
     tab_image5 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content5 = models.CharField(max_length=200, blank=True, null=True)
 
     tab_text6 = models.CharField(max_length=200, blank=True, null=True)
     tab_image6 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    tab_content6 = models.CharField(max_length=200, blank=True, null=True)
 
-    thirdParagraph_heading = models.CharField(max_length=200, blank=True, null=True)
-    thirdParagraph = models.CharField(max_length=200, blank=True, null=True)
+    
+    consectetur=models.CharField(max_length=200, blank=True, null=True)
+    consectetur_paragraph = models.CharField(max_length=500, blank=True, null=True)
+
+    row_image1=models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    row_heading1=models.CharField(max_length=200, blank=True, null=True)
+    row_paragraph1=models.CharField(max_length=200, blank=True, null=True)
+
+    row_image2 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    row_heading2 = models.CharField(max_length=200, blank=True, null=True)
+    row_paragraph2 = models.CharField(max_length=200, blank=True, null=True)
+
+    row_image3 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    row_heading3 = models.CharField(max_length=200, blank=True, null=True)
+    row_paragraph3 = models.CharField(max_length=200, blank=True, null=True)
+
+
+    client_story_heading=models.CharField(max_length=200, blank=True, null=True)
+
+    client_name1=models.CharField(max_length=200, blank=True, null=True)
+    client_image1=models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    client_description1=models.CharField(max_length=200, blank=True, null=True)
+    client_story1=models.CharField(max_length=2000, blank=True, null=True)
+
+    client_name2 = models.CharField(max_length=200, blank=True, null=True)
+    client_image2 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    client_description2 = models.CharField(max_length=200, blank=True, null=True)
+    client_story2 = models.CharField(max_length=2000, blank=True, null=True)
+
+    client_name3 = models.CharField(max_length=200, blank=True, null=True)
+    client_image3 = models.ImageField(upload_to='images/advertiser', blank=True, null=True)
+    client_description3 = models.CharField(max_length=200, blank=True, null=True)
+    client_story3 = models.CharField(max_length=2000, blank=True, null=True)
+
+    register_now_heading=models.CharField(max_length=500, blank=True, null=True)
+    register_now_description = models.CharField(max_length=500, blank=True, null=True)
+
+
+
 
 
 
