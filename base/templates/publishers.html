@@ -1,20 +1,18 @@
-      {% extends 'base.html' %}
+{% extends 'base.html' %}
        {% load static %}
 
-
-    {% block pageheadings %}
-   <div class="padding12LR">
-    <h1>Publishers</h1>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
+      {% block pageheading %}
+<div class="padding12LR">
+<h1>Publishers</h1>
+<p>{{p.publisher_text}}</p>
 <a href="" class="link">Get An Account</a>
-      </div>
-          {% endblock %}
+</div>
+{% endblock %}
 
 
 
 {% block content %}
-
-<div class="businessModel" >
+<div class="businessModel">
 <div class="container">
 <div class="row">
 <div class="col-md-6 col-sm-12 pdright34">
@@ -38,7 +36,7 @@
 <li style="background:url('{{p.r2_image.url}}')">{{p.topinfoHeading_r2}}</li>
 <li style="background:url('{{p.r3_image.url}}')">{{p.topinfoHeading_r3}}</li>
 <li style="background:url('{{p.r4_image.url}}')">{{p.topinfoHeading_r4}}</li>
-</ul>
+    </ul>
 </div>
 </div>
 
@@ -69,6 +67,7 @@
 <div class="col-md-4 col-sm-4 col-xs-6"><div class="normalShadow"><img src="{{p.point2_image4.url}}" /></div></div>
 <div class="col-md-4 col-sm-4 col-xs-6"><div class="normalShadow"><img src="{{p.point2_image5.url}}" /></div></div>
 <div class="col-md-4 col-sm-4 col-xs-6"><div class="normalShadow"><img src="{{p.point2_image6.url}}" /></div></div>
+
 </div>
 </div>
 </div>
@@ -91,5 +90,5 @@
 </div>
 </div>
 
-          {% endblock %}
+{% endblock %}
 
