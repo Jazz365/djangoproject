@@ -1,11 +1,8 @@
-      {% extends 'base.html' %}
+ {% extends 'base.html' %}
        {% load static %}
 
-
-<div class="bannerPart">
-
-{% block pageheadings %}
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      {% block pageheading %}
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <!--<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
@@ -18,12 +15,12 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6 col-sm-6"><div class="padding12LR">
-  <h3>{{ home_page.slider3_heading }} <span>{{ home_page.slider3_heading_colored }}</span></h3>
+<h3>SWIFT Revenue sit amet, <span>consectetur</span></h3>
 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
 <a href="" class="link">Advertise with Swift-Revenue</a>
 </div></div>
 <div class="col-md-6 col-sm-6 centerSliderImage">
-<img src="{% static 'images/banner-img.png' %}" />
+<img src="images/banner-img.png" />
 </div>
 </div>
 </div>
@@ -31,12 +28,11 @@
 
 </div>
 
-</div>
 </div>
           {% endblock %}
 
 
-</div>
+
 {% block content %}
 
 <div class="iTsupport h2Font">
@@ -45,49 +41,58 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
 <div class="curveDesign">
 <div class="row verticallyParent">
-<div class="col-md-5 col-sm-6 verticallyMainChild">
-<div class="curve426" style="background:url('{% static 'images/tab-box.png' %}');">
-<div class="postion1"><a href="#tab1">
-                              {{ home_page.who_we_1_heading }}
-                              <img src="{{ home_page.who_we_1_img.url | default:'#'}}" />
-                            </a></div>
-<div class="postion1 postion2"> <a href="#tab2">
-                              {{ home_page.who_we_2_heading }}
-                              <img src="{{ home_page.who_we_2_img.url | default:'#'}}" />
-                            </a></div>
-<div class="postion1 postion3"> <a href="#tab3">
-                              {{ home_page.who_we_3_heading }}
-                              <img src="{{ home_page.who_we_3_img.url | default:'#'}}" />
-                            </a></div>
-<div class="postion1 postion4">  <a href="#tab4">
-                              <img src="{{ home_page.who_we_4_img.url | default:'#'}}" />
-                              {{ home_page.who_we_4_heading }}
-                            </a></div>
-<div class="postion1 postion5"><a href="#tab5">
-                              <img src="{{ home_page.who_we_5_img.url | default:'#'}}" />
-                              {{ home_page.who_we_5_heading }}
-                            </a></div>
-<div class="postion1 postion6"><a href="#tab6">
-                              <img src="{{ home_page.who_we_6_img.url | default:'#'}}" />
-                              {{ home_page.who_we_6_heading }}
-                            </a></div>
+<div class="col-md-9 col-sm-12 verticallyMainChild">
+<div class="row">
+  <div class="col-md-7 col-sm-12 verticallyMainChild">
+<div class="curve426">
+<div class="tabs">
+  <ul id="tabs-nav">
+ <li><div class="postion1"><a href="#tab1">Perspiciatis Unde <img src="images/3.png" /></a></div></li>
+ <li><div class="postion1 postion2"><a href="#tab2">Perspiciatis Unde <img src="images/3.png" /></a></div></li>
+ <li><div class="postion1 postion3"><a href="#tab3">Perspiciatis Unde <img src="images/3.png" /></a></div></li>
+ <li><div class="postion1 postion4"><a href="#tab4"><img src="images/3.png" /> Perspiciatis Unde</a></div></li>
+ <li><div class="postion1 postion5"><a href="#tab5"><img src="images/3.png" /> Perspiciatis Unde</a></div></li>
+ <li><div class="postion1 postion6"><a href="#tab6"><img src="images/3.png" /> Perspiciatis Unde</a></div> </li>
+</div>
+
+
+ <!-- END tabs-content -->
+</div> <!-- END tabs -->
+</div>
+
+<div class="col-md-5 col-sm-12 verticallyMainChild">
+<div id="tabs-content">
+<div id="tab1" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab2" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab3" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab4" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab5" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
+</div>
+<div id="tab6" class="tab-content">
+<div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>    
 </div>
 </div>
-<div class="col-md-7 col-sm-6 verticallyMainChild">
- <div class="row">
-  <div class="col-md-6 col-sm-12">
-  <div class="basicInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</div>
-  </div>
-  <div class="col-md-6 col-sm-12">
+
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12 verticallyMainChild">
   <div class="rightBox">
-  <img src="{% static 'images/2.png' %}" />
+  <img src="images/2.png" />
   <h6>voluptatem accusa doloremque</h6>
   <a href="" class="link">Register Now</a>
   </div>
   </div>
  </div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -101,14 +106,15 @@
 <div class="skyBlueBG">
 <div id="ourClients" class="owl-carousel owl-theme">
 <div class="item">
-<img src="{% static 'images/test-img.png' %}" />
-<p>â€œSed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.â€</p>
+<img src="images/test-img.png" />
+<p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.”</p>
 <div class="namePosition">
 <h6>Perspiciatis Unde <span>Sed, Perspiciatis unde omnis</span></h6>
 </div>
 </div>
 <div class="item">
-<p>â€œUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.â€</p>
+<img src="images/test-img.png" />
+<p>“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.”</p>
 <div class="namePosition">
 <h6>Dominic Coleman <span>Product Designer</span></h6>
 </div>
@@ -121,7 +127,98 @@
 </div>
 </div>
 
+<div class="swiftrevenue swiftrevenueRIght">
+<div class="container">
+<h2>Swift-Revenuedd <br><span>Marketing Platform</span></h2>
 
+<div id="myCarouselBullet" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarouselBullet" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarouselBullet" data-slide-to="1"></li>
+	<li data-target="#myCarouselBullet" data-slide-to="2"></li>
+	<li data-target="#myCarouselBullet" data-slide-to="3"></li>
+	<li data-target="#myCarouselBullet" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="images/screen.png" /></div>
+	  </div>
+    </div>
+	
+	    <div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="images/screen.png" /></div>
+	  </div>
+    </div>
+	
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="images/screen.png" /></div>
+	  </div>
+    </div>
+	
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="images/screen.png" /></div>
+	  </div>
+    </div>
+	
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="images/screen.png" /></div>
+	  </div>
+    </div>
+	
+
+    
+  </div>
+
+
+</div>
+
+
+
+</div>
+</div>
 
 <div class="swiftrevenue">
 <div class="container">
@@ -129,13 +226,51 @@
 <div class="col-md-8 col-sm-8">
 <h2>Swift-Revenue <span>Affiliates</span> and <br>
 Advertisers</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
-<div class="col-md-4 col-sm-4">
+<div class="col-md-4 col-sm-4 rightbtnww">
 <a href="" class="link">Register Now</a>
 </div>
 </div>
+<div class="mtopBoxes">
+<div class="row">
+<div class="col-md-3 col-sm-6">
+<div class="infoBox">
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-1.png' %}');"></span>
+<h6>Coluptatem doloremque</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
 </div>
 </div>
-
+<div class="col-md-3 col-sm-6">
+<div class="infoBox">
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-2.png' %}');"></span>
+<h6>Eiusmod tempor </h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="infoBox">
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-3.png' %}');"></span>
+<h6>Magna aliqua</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="infoBox">
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-4.png' %}');"></span>
+<h6>Perspiciatis unde</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 {% endblock %}
+
+
+
+
+
+
