@@ -129,6 +129,8 @@ class Home(models.Model):
 class Publisher(models.Model):
     # Navigation Links and Dropdown
     publisher_text = models.CharField(max_length=200, blank=True, null=True)
+    publisher_button_text = models.CharField(max_length=200, blank=True, null=True)
+    publisher_button_url=models.URLField(blank=True, null=True)
 
     topinfoHeading_r_main = models.CharField(max_length=200, blank=True, null=True)
     sectopinfoHeading_r_sub = models.CharField(max_length=200, blank=True, null=True)
@@ -182,6 +184,8 @@ class Publisher(models.Model):
     
 class Advertiser(models.Model):
     advertiser_text = models.CharField(max_length=200, blank=True, null=True)
+    advertiser_button_text = models.CharField(max_length=200, blank=True, null=True)
+    advertiser_button_url=models.URLField(blank=True, null=True)
 
     topinfoPara = models.CharField(max_length=200, blank=True, null=True)
 
