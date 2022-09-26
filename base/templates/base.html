@@ -2,19 +2,22 @@
 <head>
 <title>Swift Revnue</title>
 
-{% load static %}
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link href="{% static 'css/style.css' %}" rel="stylesheet"  type="text/css"/>
+{% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
 <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
 <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
-<link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/slick-css.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
-<link href="{% static 'style.css' %}" rel="stylesheet"  type="text/css"/>
-<script>
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+<link href="{% static 'css/style.css' %}" rel="stylesheet"  type="text/css"/>
+
+    <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
 	var element = document.getElementById("closeBTN");
@@ -35,11 +38,11 @@ function closeNav() {
 
 </head>
 
-<body style="background:url('{% static 'images/top-banner-bg.png' %}');">
+<body class="">
 
 
 <div class="wrapper">
-<div class="mainBG">
+<div class="mainBG mainBGInner">
 <div class="menuBar">
 <div class="container">
 <div class="row">
@@ -79,12 +82,14 @@ function closeNav() {
 </div>
 
 
-
-<div class="bannerPart">
+    <div class="bannerPart">
      {% block pageheading %}
           {% endblock %}
 
 </div>
+
+
+
 
 </div>
       {% block content %}
