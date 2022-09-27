@@ -46,7 +46,7 @@ function closeNav() {
 <div class="menuBar">
 <div class="container">
 <div class="row">
-<div class="col-md-4 col-sm-4"><a href="./index.html"><img src="{% static 'images/logo.png' %}" class="logoSite" /></a>
+<div class="col-md-4 col-sm-4"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" class="logoSite" /></a>
 
 </div>
 <div class="col-md-8 col-sm-8">
@@ -55,14 +55,14 @@ function closeNav() {
 <div class="navigation">
 <ul>
 <li><a href="{% url 'home' %}">Home</a></li>
-<li><a href="#">Agency</a></li>
-<li><a href="#">Affiliates</a></li>
+<li><a href="{% url 'company' %}">Agency</a></li>
+<li><a href="{% url 'home' %}">Affiliates</a></li>
 <li><a href="{% url 'advertisers' %}">Advertisers</a></li>
 <li><a href="{% url 'publishers' %}">Publishers</a></li>
-<li><a href="./company.html">Company</a>
+<li><a href="{% url 'company' %}">Company</a>
 <ul>
-<li><a href="./traffic.html">Traffic</a></li>
-<li><a href="./contact.html">Contact</a></li>
+<li><a href="{% url 'traffic' %}">Traffic</a></li>
+<li><a href="{% url 'contact' %}">Contact</a></li>
 </ul>
 </li>
 </ul>
@@ -70,7 +70,7 @@ function closeNav() {
 </ul>
 <ul class="hideOnres09">
 <!--<li><a href="#" class="searchClick"></a></li>-->
-<li class="menu-item-40"><a href="./signup.html">Sign In</a></li>
+<li class="menu-item-40"><a href="{% url 'login' %}">Sign In</a></li>
 </ul>
 </div>
 </div>
