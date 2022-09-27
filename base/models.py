@@ -359,3 +359,54 @@ class Company(models.Model):
 
     def __str__(self):
         return 'Company Page'
+
+    
+    
+class TrafficPage(models.Model):
+    traffic_text = models.CharField(max_length=200, blank=True, null=True)
+    traffic_paragraph= models.TextField(blank=True, null=True)
+    traffic_button_text = models.CharField(max_length=200, blank=True, null=True)
+    traffic_button_url = models.CharField(max_length=200, blank=True, null=True)
+
+    firstinfo_paragraph = models.TextField(blank=True, null=True)
+
+    secinfo_Heading = models.CharField(max_length=200, blank=True, null=True)
+    secinfo_point1 = models.CharField(max_length=200, blank=True, null=True)
+    secinfo_point2 = models.CharField(max_length=200, blank=True, null=True)
+
+    thirdinfo_image = models.ImageField(upload_to='images/traffic', blank=True, null=True)
+
+
+    progress_main = models.CharField(max_length=200, blank=True, null=True)
+
+    progress1_heading = models.CharField(max_length=200, blank=True, null=True)
+    progress1_text=models.TextField( blank=True, null=True)
+    progress1_percentage = models.IntegerField(default=0, blank=True, null=True)
+
+    progress2_heading = models.CharField(max_length=200, blank=True, null=True)
+    progress2_text = models.TextField(blank=True, null=True)
+    progress2_percentage = models.IntegerField(default=0, blank=True, null=True)
+
+    progress_footer=models.CharField(max_length=200, blank=True, null=True)
+
+    tab_heading = models.CharField(max_length=200, blank=True, null=True)
+
+    tab1 = models.CharField(max_length=200, blank=True, null=True)
+    tab1_image = models.ImageField(upload_to='images/traffic', blank=True, null=True)
+    tab2 = models.CharField(max_length=200, blank=True, null=True)
+    tab2_image = models.ImageField(upload_to='images/traffic', blank=True, null=True)
+    tab3 = models.CharField(max_length=200, blank=True, null=True)
+    tab3_image = models.ImageField(upload_to='images/traffic', blank=True, null=True)
+    tab4 = models.CharField(max_length=200, blank=True, null=True)
+    tab4_image = models.ImageField(upload_to='images/traffic', blank=True, null=True)
+
+
+    register_button_text = models.CharField(max_length=50, blank=True, null=True)
+    register_button_url = models.URLField(blank=True, null=True)
+
+    register_heading =models.TextField(blank=True, null=True)
+    register_pargraph = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return 'Traffic Page'
+
