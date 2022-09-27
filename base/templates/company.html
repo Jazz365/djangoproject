@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+       {% load static %}
+
+      {% block pageheading %}
+
+
+<div class="padding12LR">
+<h1>Company</h1>
+<p>{{i.company_text}}</p>
+<a href="{{company_button_url}}" class="link">{{company_button_text}}</a>
+</div>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="businessModel">
+<div class="container">
+<div class="sEPcontainer">
+<div class="pWidthfix">
+<p>{{i.firstinfo_paragraph }}</p>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12 pdright34E">
+<div class="topinfoHeadingCompany">
+<div class="row">
+<div class="col-md-6 col-sm-6"><div class="imagefix"><img src="{{i.secinfo_image1.url}}" /></div></div>
+<div class="col-md-6 col-sm-6"><div class="imagefix imagefix2"><img src="{{i.secinfo_image2.url}}" /></div></div>
+<div class="col-md-6 col-sm-6"><div class="imagefix"><img src="{{i.secinfo_image3.url}}" /></div></div>
+<div class="col-md-6 col-sm-6"><div class="imagefix imagefix2"><img src="{{i.secinfo_image4.url}}" /></div></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 pdright34E">
+<div class="topinfoHeadingSep"><h3 class="pt-50">{{i.secinfo_Heading}}</h3>
+<h6>{{i.secinfo_sub}}</h6>
+<p>{{i.secinfo_paragraph}}</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="sEPcontainer noBorder">
+<div class="row">
+<div class="col-md-6 col-sm-12 pdright34E progress-col">
+<div class="topinfoHeadingCompany topinfoHeadingCompany2 progressMain">
+<h4>{{i.progress_heading}}</h4>
+<h5>{{i.progress1_name}}</h5>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="70"
+aria-valuemin="0" aria-valuemax="100" style="width:{{i.progress1_percentage}}%">
+</div><span>{{i.progress1_percentage}}%</span>
+</div>
+<h5>{{i.progress2_name}}</h5>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="56"
+aria-valuemin="0" aria-valuemax="100" style="width:{{i.progress2_percentage}}%">
+</div><span>{{i.progress2_percentage}}%</span>
+</div>
+<h5>{{i.progress3_name}}</h5>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="82"
+aria-valuemin="0" aria-valuemax="100" style="width:{{i.progress3_percentage}}%">
+</div><span>{{i.progress3_percentage}}%</span>
+</div>  
+</div>
+</div>
+<div class="col-md-6 col-sm-12 pdright34E">
+<div class="topinfoHeadingSep"><h3 class="pt-20">{{i.thirdinfo_heading}}</h3>
+
+<p class="mt-0">{{i.thirdinfo_paragraph}}</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="sEPcontainer noBorder mt0 company-contact">
+<div class="row company-spacing">
+<div class="col-md-5 col-sm-12 pdright34E copy-col">
+<div class="topinfoHeadingSep topinfoHeadingCompany topinfoHeadingCompany2 mt0">
+<h4>{{i.fourthinfo_heading}}</h4>
+<p class="mt-0">{{i.fourthinfo_paragraph}}</p>
+<ul class="inlineIcons">
+<li><a href=""><img src="{{i.icon1.url}}" /></a></li>
+<li><a href=""><img src="{{i.icon2.url}" /></a></li>
+<li><a href=""><img src="{{i.icon3.url}" /></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-7 col-sm-12 pdright34E text-col">
+<div class="topinfoHeadingSep">
+<img src="{{i.fourthinfo_image}}" />
+</div>
+
+</div>
+</div>
+
+
+<div class="row mt60">
+<div class="col-md-6 col-sm-12 pdright34E">
+<div class="topinfoHeadingSep">
+<img src="{{i.contact_image.url}}" />
+</div>
+
+</div>
+<div class="col-md-6 col-sm-12 pdright34E">
+<div class="topinfoHeadingSep topinfoHeadingCompany topinfoHeadingCompany2 mt0">
+<h3 class="pt-40">{{i.company_contact_heading}}</h3>
+<p class="mt-0">{{i.company_contact_para}}</p>
+<ul class="addressIcon">
+<li><a href=""><em><i class="fa fa-phone"></i></em><span>{{i.phone_heading}}</span>{{i.phone}}</a></li>
+<li><a href=""><em><i class="fa fa-envelope"></i></em><span>{{i.email_heading}}</span>{{i.email}}</a></li>
+<li><a href=""><em><i class="fa fa-map-marker"></i></em><span>{{i.location_heading}}</span>{{i.location}}</a></li>
+</ul>
+<a href="{{i.getTouch_button_url}}" class="link">{{i.getTouch_button_text}} </a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+<div class="businessModel2 mt0">
+<div class="container">
+
+<div class="topSpace56 mt0">
+<div class="row">
+<div class="col-md-9 col-sm-8">
+<h2>{{i.register_heading}}</h2>
+    <p>{{i.register_paragraph}}</p></div>
+<div class="col-md-3 col-sm-4 rightbtnww">
+<a href="" class="link">Register Now</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+{% endblock %}
+

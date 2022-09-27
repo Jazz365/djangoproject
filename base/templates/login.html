@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% load static %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/slick-css.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+<link href="{% static 'css/style.css' %}" rel="stylesheet"  type="text/css"/>
+
+    <title>Swift Revnues</title>
+</head>
+<body class="signup-page login-page">
+    <section class="signup-sec">
+        <div class="container">
+          <div class="signup-row">
+            <div class="signup-left">
+<a href="{% url 'home' %}"><img src="{% static 'images/site-logo.png' %}" alt="site-logo" class="site-logo"></a>
+                <div class="row inner-wrapper">
+                    <div class="col-md-6">
+                        <img src="{% static 'images/signup-col-img.png' %}" alt="signup-image">
+                    </div>
+                    <div class="col-md-6">
+                        <h1><span>Swift </span>Revenue</h1>
+                    </div>
+                </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div class="signup-right">
+                <h2>Login to your accont</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <form action="" class="login-form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                       
+                       
+                      
+                       
+                        <div class="col-sm-12 ">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="form-checkbox">
+                        
+                        <div class="checkbox-row">
+                            <input type="checkbox">
+                            <label > Remember me</label><br>
+                           
+                        </div>
+                        <div class="reset-col">
+                            <a href="">Reset Password?</a>
+                        </div>
+                        </div>
+                       
+  <div class="col-md-12 col-sm-12 signup-btn"><input type="submit" value="Sign In"></div>
+  <div class="help-text">
+    <p>Don’t have an account yet?<a href="{% url 'signup' %}"> Join Swift Revenue</a></p>
+
+  </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+         
+
+        </div>
+        <div class="copyrightSec">
+            <div class="container">
+            <div class="row">
+            <div class="col-md-8 col-sm-12 textLeft">
+            <ul class="logoSocialF">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+            </div>
+            <div class="col-md-4 col-sm-12 rightTextF">
+            <p>© All Rights Reserved - SwiftRevenue - 2022</p>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+    
+
+    
+</body>
+</html>
