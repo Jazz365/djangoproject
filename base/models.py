@@ -283,3 +283,79 @@ class Advertiser(models.Model):
 
     def __str__(self):
         return 'Advertiser Page'
+    
+    
+class Company(models.Model):
+
+    company_text = models.TextField(blank=True, null=True)
+    company_button_text = models.CharField(max_length=200, blank=True, null=True)
+    company_button_url = models.CharField(max_length=200, blank=True, null=True)
+
+    firstinfo_paragraph = models.TextField(blank=True, null=True)
+    secinfo_Heading = models.CharField(max_length=200, blank=True, null=True)
+    secinfo_sub = models.CharField(max_length=200, blank=True, null=True)
+    secinfo_paragraph = models.TextField(blank=True, null=True)
+    secinfo_image1 = models.ImageField(upload_to='images/company', blank=True, null=True)
+    secinfo_image2 = models.ImageField(upload_to='images/company', blank=True, null=True)
+    secinfo_image3 = models.ImageField(upload_to='images/company', blank=True, null=True)
+    secinfo_image4 = models.ImageField(upload_to='images/company', blank=True, null=True)
+
+
+
+
+    progress_heading = models.CharField(max_length=200, blank=True, null=True)
+
+    progress1_name = models.CharField(max_length=200, blank=True, null=True)
+    progress1_percentage = models.IntegerField(default=0, blank=True, null=True)
+
+    progress2_name = models.CharField(max_length=200, blank=True, null=True)
+    progress2_percentage = models.IntegerField(default=0, blank=True, null=True)
+
+    progress3_name = models.CharField(max_length=200, blank=True, null=True)
+    progress3_percentage = models.IntegerField(default=0, blank=True, null=True)
+
+
+
+    thirdinfo_heading=models.CharField(max_length=200, blank=True, null=True)
+    thirdinfo_paragraph=models.TextField(blank=True, null=True)
+
+
+
+    fourthinfo_heading = models.CharField(max_length=200, blank=True, null=True)
+    fourthinfo_paragraph = models.TextField(blank=True, null=True)
+    fourthinfo_image = models.ImageField(upload_to='images/company', blank=True, null=True)
+
+    icon1=models.ImageField(upload_to='images/company', blank=True, null=True)
+    icon2 = models.ImageField(upload_to='images/company', blank=True, null=True)
+    icon3 = models.ImageField(upload_to='images/company', blank=True, null=True)
+
+
+
+    contact_image = models.ImageField(upload_to='images/', blank=True, null=True)
+
+    company_contact_heading = models.CharField(max_length=200, blank=True, null=True)
+    company_contact_para= models.TextField(blank=True, null=True)
+
+    phone_heading= models.CharField(max_length=200, blank=True, null=True)
+    phone = models.CharField(max_length=200, blank=True, null=True)
+
+    email_heading = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+
+    location_heading = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+
+    getTouch_button_text=models.CharField(max_length=200, blank=True, null=True)
+    getTouch_button_url=models.URLField(blank=True, null=True)
+
+    register_button_text = models.CharField(max_length=200, blank=True, null=True)
+    register_button_url=models.URLField(blank=True, null=True)
+
+    register_heading = models.CharField(max_length=200, blank=True, null=True)
+    register_pargraph = models.TextField(blank=True, null=True)
+
+
+
+
+    def __str__(self):
+        return 'Company Page'
