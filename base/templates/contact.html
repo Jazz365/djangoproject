@@ -4,9 +4,9 @@
       {% block pageheading %}
 
 <div class="padding12LR">
-<h1>Get In Touch</h1>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
-<a href="" class="link">Get An Account</a>
+<h1>{{i.contact_text}}</h1>
+<p>{{i.contact_paragraph}}</p>
+<a href="{{i.contact_button_url}}" class="link">{{i.contact_button_text}}</a>
 </div>
 
 {% endblock %}
@@ -31,32 +31,31 @@ sales@accentbearings.com</p>
 <div class="col-md-3 col-sm-6">
 <div class="fixSizeBox fixSizeBox2">
 <span></span>
-<h4>Phone Number</h4>
+<h4>{{i.phone_heading}}</h4>
 <p>Toll Free: 888.916.1930 <br>
-Phone: 630.916.1930</p>
-<a href="tel:+18889161930" class="link">Call Us   </a>
+Phone: {{i.phone}}</p>
+<a href="tel:+{{phone}}" class="link">Call Us   </a>
 </div>
 </div>
 
 <div class="col-md-3 col-sm-6">
 <div class="fixSizeBox fixSizeBox3">
 <span></span>
-<h4>Office Address</h4>
-<p>367-G S. Rohlwing Rd. <br>
-Addison, IL 60101</p>
-<a href="https://goo.gl/maps/kMDZdRLWaAPo11137" target="_blank" class="link">Direction </a>
+<h4>{{i.address_heading}}</h4>
+<p>{{i.address}}</p>
+<a href="{{i.map_link}}" target="_blank" class="link">{{i.map_link_name}}</a>
 </div>
 </div>
 
 <div class="col-md-3 col-sm-6">
 <div class="fixSizeBox fixSizeBox4">
 <span></span>
-<h4>Social Connect</h4>
+<h4>{{i.social_heading}}</h4>
 <ul class="logoSocialF logoSocialFContact">
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+<li><a href="{{i.facebook_link}}"><i class="fa fa-facebook"></i></a></li>
+<li><a href="{{i.twitter_link}}"><i class="fa fa-twitter"></i></a></li>
+<li><a href="{{i.instagram_link}}"><i class="fa fa-instagram"></i></a></li>
+<li><a href="{{i.youtube_link}}"><i class="fa fa-youtube-play"></i></a></li>
 </ul>
 </div>
 </div>
@@ -66,8 +65,8 @@ Addison, IL 60101</p>
 
 
 <div class="formAreaContact">
-<h2>We can take your business <br>
-to the next level.</h2>
+<h2>{{i.business_heading}}
+</h2>
 
 <div class="formInnerContact">
 <div class="row">
@@ -90,11 +89,11 @@ to the next level.</h2>
 <div class="topSpace56 mt0">
 <div class="row">
 <div class="col-md-9 col-sm-8">
-<h2>Lorem ipsum dolor <span>adipiscing elit</span> sed do eiusmod tempor</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+<h2>{{i.register_heading}}</h2>
+<p>{{i.register_paragraph}}</p>
 </div>
 <div class="col-md-3 col-sm-4 rightbtnww">
-<a href="" class="link">Register Now</a>
+<a href="{{i.register_button_url}}" class="link">{{i.register_button_text}}</a>
 </div>
 </div>
 </div>
