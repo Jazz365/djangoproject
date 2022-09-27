@@ -419,8 +419,7 @@ class ContactPage(models.Model):
     contact_button_text = models.CharField(max_length=200, blank=True, null=True)
     contact_button_url = models.CharField(max_length=200, blank=True, null=True)
 
-    firstinfo_paragraph = models.TextField(blank=True, null=True)
-
+    
     email_heading = models.CharField(max_length=200, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     email2 = models.EmailField(blank=True, null=True)
@@ -430,7 +429,7 @@ class ContactPage(models.Model):
 
     phone_heading = models.CharField(max_length=200, blank=True, null=True)
     phone = models.CharField(max_length=200, blank=True, null=True)
-    call_us = models.IntegerField(default=0, blank=True, null=True)
+    
 
     address_heading = models.CharField(max_length=200, blank=True, null=True)
     address = models.TextField(blank=True, null=True)
@@ -463,10 +462,17 @@ class LoginPage(models.Model):
     page_text = models.TextField(blank=True, null=True)
 
     signin_button_text = models.CharField(max_length=200, blank=True, null=True)
-    signin_button_url = models.CharField(max_length=200, blank=True, null=True)
+    
 
     dont_have_accout = models.CharField(max_length=200, blank=True, null=True)
     signup_link_name = models.CharField(max_length=200, blank=True, null=True)
+    
+    facebook_link = models.URLField(blank=True, null=True)
+    twitter_link = models.URLField(blank=True, null=True)
+    instagram_link = models.URLField(blank=True, null=True)
+    youtube_link = models.URLField(blank=True, null=True)
+    linkdin_link = models.URLField(blank=True, null=True)
+ 
 
 
 
@@ -483,12 +489,19 @@ class SignUpPage(models.Model):
     page_text = models.TextField(blank=True, null=True)
 
     signup_button_text = models.CharField(max_length=200, blank=True, null=True)
-    signup_button_url = models.CharField(max_length=200, blank=True, null=True)
+    
 
 
 
     already_have_accout = models.CharField(max_length=200, blank=True, null=True)
     login_link_name = models.CharField(max_length=200, blank=True, null=True)
+    
+    facebook_link = models.URLField(blank=True, null=True)
+    twitter_link = models.URLField(blank=True, null=True)
+    instagram_link = models.URLField(blank=True, null=True)
+    youtube_link = models.URLField(blank=True, null=True)
+    linkdin_link = models.URLField(blank=True, null=True)
+ 
 
     def __str__(self):
         return 'SignUp Page'
