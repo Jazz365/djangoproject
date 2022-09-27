@@ -410,3 +410,85 @@ class TrafficPage(models.Model):
     def __str__(self):
         return 'Traffic Page'
 
+
+    
+    
+class ContactPage(models.Model):
+    contact_text = models.CharField(max_length=200, blank=True, null=True)
+    contact_paragraph= models.TextField(blank=True, null=True)
+    contact_button_text = models.CharField(max_length=200, blank=True, null=True)
+    contact_button_url = models.CharField(max_length=200, blank=True, null=True)
+
+    firstinfo_paragraph = models.TextField(blank=True, null=True)
+
+    email_heading = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    email2 = models.EmailField(blank=True, null=True)
+    email_us = models.CharField(max_length=200, blank=True, null=True)
+
+
+
+    phone_heading = models.CharField(max_length=200, blank=True, null=True)
+    phone = models.CharField(max_length=200, blank=True, null=True)
+    call_us = models.IntegerField(default=0, blank=True, null=True)
+
+    address_heading = models.CharField(max_length=200, blank=True, null=True)
+    address = models.TextField(blank=True, null=True)
+    map_link_name=models.CharField(max_length=200, blank=True, null=True)
+    map_link = models.URLField(blank=True, null=True)
+
+    social_heading=models.CharField(max_length=200, blank=True, null=True)
+
+    facebook_link = models.URLField( blank=True, null=True)
+    twitter_link = models.URLField(blank=True, null=True)
+    instagram_link = models.URLField(blank=True, null=True)
+    youtube_link = models.URLField(blank=True, null=True)
+
+    business_heading= models.CharField(max_length=200, blank=True, null=True)
+
+
+    register_button_text = models.CharField(max_length=50, blank=True, null=True)
+    register_button_url = models.URLField(blank=True, null=True)
+
+    register_heading =models.TextField(blank=True, null=True)
+    register_pargraph = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return 'Contact Page'
+class LoginPage(models.Model):
+    login_text = models.CharField(max_length=200, blank=True, null=True)
+    login_paragraph= models.TextField(blank=True, null=True)
+
+    page_image = models.ImageField(upload_to='images/registration', blank=True, null=True)
+    page_text = models.TextField(blank=True, null=True)
+
+    signin_button_text = models.CharField(max_length=200, blank=True, null=True)
+    signin_button_url = models.CharField(max_length=200, blank=True, null=True)
+
+    dont_have_accout = models.CharField(max_length=200, blank=True, null=True)
+    signup_link_name = models.CharField(max_length=200, blank=True, null=True)
+
+
+
+
+    def __str__(self):
+        return 'Login Page'
+
+
+class SignUpPage(models.Model):
+    signup_text = models.CharField(max_length=200, blank=True, null=True)
+    signup_paragraph = models.TextField(blank=True, null=True)
+
+    page_image = models.ImageField(upload_to='images/registration', blank=True, null=True)
+    page_text = models.TextField(blank=True, null=True)
+
+    signup_button_text = models.CharField(max_length=200, blank=True, null=True)
+    signup_button_url = models.CharField(max_length=200, blank=True, null=True)
+
+
+
+    already_have_accout = models.CharField(max_length=200, blank=True, null=True)
+    login_link_name = models.CharField(max_length=200, blank=True, null=True)
+
+    def __str__(self):
+        return 'SignUp Page'
