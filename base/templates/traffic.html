@@ -4,9 +4,9 @@
       {% block pageheading %}
 
 <div class="padding12LR">
-<h1>Traffic Filtering For Your Needs</h1>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>doloremque laudantium, totam rem aperiam.</p>
-<a href="" class="link">Get An Account</a>
+<h1>{{i.traffic_text}}</h1>
+<p>{{i.traffic_paragraph}}</p>
+<a href="{{i.traffic_button_url}}" class="link">{{i.traffic_button_text}}</a>
 </div>
 {% endblock %}
 
@@ -17,13 +17,13 @@
     <div class="container">
         <div class="sEPcontainer noBorder">
             <div class="pWidthfix">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+            <p>{{i.firstinfo_paragraph}}</p>
             </div>
            <div class="two-col-copy-sec">
-            <h2 class="text-center">Consectetur<span> Adipiscing elit</span> </h2>
+            <h2 class="text-center">{{i.secinfo_Heading }}</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+                <li>{{i.secinfo_point1}}</li>
+                <li>{{i.secinfo_point2}}</li>
             </ul>
            </div>
             
@@ -35,17 +35,16 @@
     <div class="container">
         <div class="row copy-img-row">
             <div class="col-md-6 col-sm-6 col-xs-12 img-col">
-<img src="./images/dummy-img.png" alt="image">
+<img src="{{i.thirdinfo_image.url}}" alt="image">
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 ">
                 <div class="text-col">
-                    <h3>Sed ut perspiciatis unde<br>
-                        omnis iste natus</h3>
+                    <h3>{{i.progress_main}}</h3>
                         <div class="progress-row">
                             <div class="progress-icon">
                                 <div class="radial-01 radial-three-quarters">
                                     <span class="radial-01-number">
-                                      75<span class="radial-01-syb"><sub>%</sub></span>
+                                     {{i.progress1_percentage}}<span class="radial-01-syb"><sub>%</sub></span>
                                     </span>
                                     <span class="radial-01-border-r"></span>
                                     <span class="radial-01-border-l"></span>
@@ -54,16 +53,15 @@
                             </div>
                            
                               <div class="progress-text">
-                                <h4>Sed ut perspiciatis unde</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt.</p>
+                                <h4>{{i.progress1_heading}}</h4>
+                                <p>{{i.progress1_text}}</p>
                               </div>
                         </div>
                         <div class="progress-row">
                             <div class="progress-icon">
                                 <div class="radial-01 radial-fifty">
                                     <span class="radial-01-number">
-                                      50<span class="radial-01-syb"><sub>%</sub></span>
+                                      {{i.progress2_percentage}}<span class="radial-01-syb"><sub>%</sub></span>
                                     </span>
                                     <span class="radial-01-border-r"></span>
                                     <span class="radial-01-border-l"></span>
@@ -72,14 +70,13 @@
                             </div>
                            
                               <div class="progress-text">
-                                <h4>Sed ut perspiciatis unde</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt.</p>
+                                <h4>{{i.progress2_heading}}</h4>
+                                <p>{{i.progress2_text}}</p>
                                     
                               </div>
                         </div>
                 </div>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <p class="text-center">{{i.progress_footer}}</p>
                 
 
             </div>
@@ -93,16 +90,15 @@
     <div class="row tab-row">
         <div class=" col-md-6 col-sm-6 col-xs-12 verticallyMainChild">
       <div class="tab-list">
-        <h2>Consectetur adipiscing elit,<br>
-            sed do eiusmod tempor </h2>
+        <h2>{{i.tab_heading}}</h2>
       <div class="tabs">
         <ul id="tabs-nav">
-       <li class=""><div class=""><a href="#tab1">Sed ut perspiciatis unde omnis iste natus</a></div></li>
-       <li class=""><div class=""><a href="#tab2">Sed ut perspiciatis</a></div></li>
-       <li class=""><div class=""><a href="#tab3">Sed ut perspiciatis unde omnis iste natus</a></div></li>
+       <li class=""><div class=""><a href="#tab1">{{i.tab1}}</a></div></li>
+       <li class=""><div class=""><a href="#tab2">{{i.tab2}}</a></div></li>
+       <li class=""><div class=""><a href="#tab3">{{i.tab3}}</a></div></li>
       
        
-       <li><div class=""><a href="#tab4"> Ynde omnis iste natus</a></div> </li>
+       <li><div class=""><a href="#tab4"> {{i.tab4}}</a></div> </li>
       </ul></div>
       
       
@@ -113,16 +109,16 @@
       <div class="col-md-6 col-sm-6 col-xs-12 verticallyMainChild">
       <div id="tabs-content">
       <div id="tab1" class="tab-content" style="display: none;">
-      <div ><img src="./images/dummy-img.png" alt="tab-image"></div>    
+      <div ><img src="{{i.tab1_image.url}}" alt="tab-image"></div>
       </div>
       <div id="tab2" class="tab-content" style="display: none;">
-      <div ><img src="./images/dummy-img.png" alt="tab-image"></div>    
+      <div ><img src="{{i.tab2_image.url}}" alt="tab-image"></div>
       </div>
       <div id="tab3" class="tab-content" style="display: none;">
-      <div ><img src="./images/dummy-img.png" alt="tab-image"></div>    
+      <div ><img src="{{i.tab3_image.url}}" alt="tab-image"></div>
       </div>
       <div id="tab4" class="tab-content" style="display: block;">
-      <div class=""><img src="./images/dummy-img.png" alt="tab-image"></div>    
+      <div class=""><img src="{{i.tab4_image.url}}" alt="tab-image"></div>
       </div>
      
      
@@ -138,11 +134,11 @@
     <div class="topSpace56 mt0">
     <div class="row">
     <div class="col-md-9 col-sm-8">
-    <h2>Lorem ipsum dolor <span>adipiscing elit</span> sed do eiusmod tempor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    <h2>{{i.register_heading}}</h2>
+    <p>{{i.register_paragraph}}</p>
     </div>
     <div class="col-md-3 col-sm-4 rightbtnww">
-    <a href="" class="link">Register Now</a>
+    <a href="{{i.register_button_url}}" class="link">{{i.register_button_text}}</a>
     </div>
     </div>
     </div>
