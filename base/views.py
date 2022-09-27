@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Home, SavedEmail, Publisher, Advertiser, Company, TrafficPage
+from .models import Home, SavedEmail, Publisher, Advertiser, Company, TrafficPage, ContactPage, LoginPage, SignUpPage
 
 
 # Create your views here.
@@ -54,17 +54,23 @@ def traffic(request):
 
 def contact(request):
     context = {}
+    contact, created = ContactPage.objects.get_or_create(id=1)
+    context['i'] = contact
     
 
     return render(request, 'contact.html', context)
 
 def signup(request):
     context = {}
+    signup, created = SignUpPage.objects.get_or_create(id=1)
+    context['i'] = signup
     
     return render(request, 'signup.html', context)
 
 def login(request):
     context = {}
+    login, created = LoginPage.objects.get_or_create(id=1)
+    context['i'] = login
     
 
     return render(request, 'login.html', context)
