@@ -75,7 +75,7 @@ def login(request):
         password = request.POST.get('password')
         action = request.POST.get('action')
 
-        r = requests.post('https://198.199.88.236:8000/login.trackier.com', data={'eamil': email, 'password': password, 'action':action})
+        r = requests.post('https://198.199.88.236:8000/login.trackier.com', data={'email': email, 'password': password, 'action':action})
         if r.status_code == 200:
             response = r.json()
             token = response['token']
