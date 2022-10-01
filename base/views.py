@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Home, SavedEmail, Publisher, Advertiser, Company, TrafficPage, ContactPage, LoginPage, SignUpPage
-
+import requests
 
 # Create your views here.
 
