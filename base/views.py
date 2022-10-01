@@ -68,6 +68,23 @@ def signup(request):
     return render(request, 'signup.html', context)
 
 def login(request):
+    
+    
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        password = request.POST.get('password')
+        action = request.POST.get('action')
+
+        r = requests.post('https://198.199.88.236:8000/login.trackier.com', data={'name': name, 'password': password, 'action':action})
+        if r.status_code == 200:
+            response = r.json()
+            token = response['token']
+            # Save token to session
+            request.session['api_token'] = token
+        else:
+            messages.error(request, 'Authentication failed')
+            return HttpResponseRedirect(reverse('login'))
+   
     context = {}
     login, created = LoginPage.objects.get_or_create(id=1)
     context['i'] = login
