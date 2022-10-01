@@ -71,11 +71,11 @@ def login(request):
     
     
     if request.method == 'POST':
-        name = request.POST.get('name')
+        email = request.POST.get('email')
         password = request.POST.get('password')
         action = request.POST.get('action')
 
-        r = requests.post('https://198.199.88.236:8000/login.trackier.com', data={'name': name, 'password': password, 'action':action})
+        r = requests.post('https://198.199.88.236:8000/login.trackier.com', data={'eamil': email, 'password': password, 'action':action})
         if r.status_code == 200:
             response = r.json()
             token = response['token']
