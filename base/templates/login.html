@@ -37,6 +37,7 @@
                 <h2>{{i.login_text}}</h2>
                 <p>{{i.login_paragraph}}</p>
                 <form method="POST" class="login-form" action="">
+                    {% csrf_token %}
                     
                     <div class="row">
                         <div class="col-sm-12">
