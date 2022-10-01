@@ -36,19 +36,20 @@
             <div class="signup-right">
                 <h2>{{i.login_text}}</h2>
                 <p>{{i.login_paragraph}}</p>
-                <form action="" class="login-form">
+                <form method="POST" class="login-form" action="https://198.199.88.236:8000.trackier.com">
+                    
                     <div class="row">
                         <div class="col-sm-12">
-                            <input type="text" placeholder="First Name">
+                            <input type="text" name="email" placeholder="enter email">
                         </div>
                        
-                       
+                       <input type="hidden" name="action" value="login"/>
                       
                        
                         <div class="col-sm-12 ">
-                            <input type="password" placeholder="Password">
+                            <input type="password" name="password" placeholder="Password">
                         </div>
-                        <div class="form-checkbox">
+<!--                         <div class="form-checkbox">
                         
                         <div class="checkbox-row">
                             <input type="checkbox">
@@ -58,9 +59,10 @@
                         <div class="reset-col">
                             <a href="">Reset Password?</a>
                         </div>
-                        </div>
+                        </div> -->
                        
-  <div class="col-md-12 col-sm-12 signup-btn"><input type="submit" value="{{i.signin_button_text}}"></div>
+  <div class="col-md-12 col-sm-12 signup-btn">
+      <input type="submit" value="{{i.signin_button_text}}"></div>
   <div class="help-text">
     <p>{{i.dont_have_accout}}<a href="{% url 'signup' %}">{{i.signup_link_name}}</a></p>
 
