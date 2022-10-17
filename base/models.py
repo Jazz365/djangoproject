@@ -60,7 +60,10 @@ class Home(models.Model):
     
     
     image1_text = models.CharField(max_length=100, blank=True, null=True)
+    image2_text = models.CharField(max_length=100, blank=True, null=True)
+    image3_text = models.CharField(max_length=100, blank=True, null=True)
     image4_text = models.CharField(max_length=100, blank=True, null=True)
+    image5_text = models.CharField(max_length=100, blank=True, null=True)
     image6_text = models.CharField(max_length=100, blank=True, null=True)
     
     who_we_1_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
