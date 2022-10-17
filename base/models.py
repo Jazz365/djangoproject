@@ -52,26 +52,30 @@ class Home(models.Model):
 #     slider3_image = models.ImageField(upload_to='images/home/', blank=True, null=True)
 
     # Who We Are Section (heading, small image and text that shows after hovring over image)
-    who_we_heading = models.CharField(max_length=100, blank=True, null=True)
-    
-    who_we_text = models.TextField(blank=True, null=True)
-    
-
-    
-    
-    image1_text = models.CharField(max_length=100, blank=True, null=True)
-    image2_text = models.CharField(max_length=100, blank=True, null=True)
-    image3_text = models.CharField(max_length=100, blank=True, null=True)
-    image4_text = models.CharField(max_length=100, blank=True, null=True)
-    image5_text = models.CharField(max_length=100, blank=True, null=True)
-    image6_text = models.CharField(max_length=100, blank=True, null=True)
-    
+     who_we_1_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_1_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_1_text = models.TextField(blank=True, null=True)
+
+    who_we_2_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_2_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_2_text = models.TextField(blank=True, null=True)
+
+    who_we_3_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_3_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_3_text = models.TextField(blank=True, null=True)
+
+    who_we_4_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_4_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_4_text = models.TextField(blank=True, null=True)
+
+    who_we_5_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_5_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_5_text = models.TextField(blank=True, null=True)
+
+    who_we_6_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_6_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
+    who_we_6_text = models.TextField(blank=True, null=True)
+
     
 
     # Small Slider Section
