@@ -52,7 +52,7 @@ class Home(models.Model):
 #     slider3_image = models.ImageField(upload_to='images/home/', blank=True, null=True)
 
     # Who We Are Section (heading, small image and text that shows after hovring over image)
-     who_we_1_heading = models.CharField(max_length=100, blank=True, null=True)
+    who_we_1_heading = models.CharField(max_length=100, blank=True, null=True)
     who_we_1_img = models.ImageField(upload_to='images/home/', blank=True, null=True)
     who_we_1_text = models.TextField(blank=True, null=True)
 
