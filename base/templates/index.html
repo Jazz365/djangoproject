@@ -4,33 +4,31 @@
       {% block pageheading %}
 
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <!--<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
     <li data-target="#myCarousel" data-slide-to="1">2</li>
   </ol>-->
-  
+
   <!-- Wrapper for slides -->
 <div class="carousel-inner">
 <div class="item active">
 <div class="container">
 <div class="row">
 <div class="col-md-6 col-sm-6"><div class="padding12LR">
-<h3>SWIFT Revenue sit amet, <span>consectetur</span></h3>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.</p>
-<a href="" class="link">Advertise with Swift-Revenue</a>
+<h3>{{ home_page.slider1_heading }} <span>{{ home_page.slider1_heading_colored }}</span></h3>
+<p>{{ home_page.slider1_text | linebreaks }}</p>
+<a href="{{ home_page.slider1_button_url}}" class="link">{{ home_page.slider1_button_text }}</a>
 </div></div>
 <div class="col-md-6 col-sm-6 centerSliderImage">
-<img src="{% static 'images/banner-img.png' %}" />
+<img src="{{home_page.slider1_image.url}}" />
 </div>
 </div>
 </div>
 </div>
 
-</div>
-
-</div>
 </div>
 
 </div>
@@ -273,17 +271,17 @@ display: block;}
 <div class="skyBlueBG">
 <div id="ourClients" class="owl-carousel owl-theme">
 <div class="item">
-<img src="{% static 'images/test-img.png' %}" />
-<p>“Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam.”</p>
+<img src="{{ home_page.small_slider_1_person_img.url}}" />
+<p>“{{ home_page.small_slider_1_text }}”</p>
 <div class="namePosition">
-<h6>Perspiciatis Unde <span>Sed, Perspiciatis unde omnis</span></h6>
+<h6>{{ home_page.small_slider_1_person }} <span>{{ home_page.small_slider_1_designation }}</span></h6>
 </div>
 </div>
 <div class="item">
-<img src="{% static 'images/test-img.png' %}" />
-<p>“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.”</p>
+<img src="{{ home_page.small_slider_2_person_img.url}}" />
+<p>“{{ home_page.small_slider_2_text }}”</p>
 <div class="namePosition">
-<h6>Dominic Coleman <span>Product Designer</span></h6>
+<h6>{{ home_page.small_slider_2_person }} <span>{{ home_page.small_slider_2_designation }}</span></h6>
 </div>
 </div>
 </div>
@@ -293,8 +291,6 @@ display: block;}
 </div>
 </div>
 </div>
-
-
 
 <div class="swiftrevenue swiftrevenueRIght">
 <div class="container">
@@ -316,69 +312,69 @@ display: block;}
       <div class="row">
 	  <div class="col-md-6 col-sm-6">
 	  <div class="topAreaInfoSlider">
-	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  <h3>{{ home_page.info_slider_1_heading }}</h3>
+	  <p>{{ home_page.info_slider_1_text }}</p>
+	  <a href="{{ home_page.info_slider_1_link }}" class="linkAr"><span>{{home_page.info_slider_1_link_name }}</span></a>
 	  </div>
 	  </div>
-	  <div class="col-md-6 col-sm-6"><img src="{% static 'images/screen.png' %}" /></div>
+	  <div class="col-md-6 col-sm-6"><img src="{{ home_page.info_slider_1_img.url}}" /></div>
 	  </div>
     </div>
-	
+
 	    <div class="item">
       <div class="row">
 	  <div class="col-md-6 col-sm-6">
 	  <div class="topAreaInfoSlider">
-	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
+	  <h3>{{ home_page.info_slider_2_heading }}</h3>
+	  <p>{{ home_page.info_slider_2_text }}</p>
+		  <a href="{{ home_page.info_slider_2_link }}" class="linkAr"><span>{{home_page.info_slider_2_link_name }}</span></a>
 	  </div>
 	  </div>
-	  <div class="col-md-6 col-sm-6"><img src="{% static 'images/screen.png' %}" /></div>
-	  </div>
-    </div>
-	
-	<div class="item">
-      <div class="row">
-	  <div class="col-md-6 col-sm-6">
-	  <div class="topAreaInfoSlider">
-	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
-	  </div>
-	  </div>
-	  <div class="col-md-6 col-sm-6"><img src=""{% static 'images/screen.png' %}" /></div>
+	  <div class="col-md-6 col-sm-6"><img src="{{ home_page.info_slider_2_img.url}}" /></div>
 	  </div>
     </div>
-	
-	<div class="item">
-      <div class="row">
-	  <div class="col-md-6 col-sm-6">
-	  <div class="topAreaInfoSlider">
-	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
-	  </div>
-	  </div>
-	  <div class="col-md-6 col-sm-6"><img src="{% static 'images/screen.png' %}" /></div>
-	  </div>
-    </div>
-	
-	<div class="item">
-      <div class="row">
-	  <div class="col-md-6 col-sm-6">
-	  <div class="topAreaInfoSlider">
-	  <h3>Consectetur adipiscing elit, sed do eiusmod</h3>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	  <a href="#" class="linkAr"><span>Lorem ipsum</span></a>
-	  </div>
-	  </div>
-	  <div class="col-md-6 col-sm-6"><img src="{% static 'images/screen.png' %}" /></div>
-	  </div>
-    </div>
-	
 
-    
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+  <h3>{{ home_page.info_slider_3_heading }}</h3>
+	  <p>{{ home_page.info_slider_3_text }}</p>
+	 <a href="{{ home_page.info_slider_3_link }}" class="linkAr"><span>{{home_page.info_slider_3_link_name }}</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="{{ home_page.info_slider_3_img.url}}" /></div>
+	  </div>
+    </div>
+
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	  <h3>{{ home_page.info_slider_4_heading }}</h3>
+	  <p>{{ home_page.info_slider_4_text }}</p>
+	 <a href="{{ home_page.info_slider_4_link }}" class="linkAr"><span>{{home_page.info_slider_4_link_name }}</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="{{ home_page.info_slider_4_img.url}}" /></div>
+	  </div>
+    </div>
+
+	<div class="item">
+      <div class="row">
+	  <div class="col-md-6 col-sm-6">
+	  <div class="topAreaInfoSlider">
+	   <h3>{{ home_page.info_slider_5_heading }}</h3>
+	  <p>{{ home_page.info_slider_5_text }}</p>
+	  <a href="{{ home_page.info_slider_5_link }}" class="linkAr"><span>{{home_page.info_slider_5_link_name }}</span></a>
+	  </div>
+	  </div>
+	  <div class="col-md-6 col-sm-6"><img src="{{ home_page.info_slider_5_img.url}}" /></div>
+	  </div>
+    </div>
+
+
+
   </div>
 
 
@@ -388,8 +384,6 @@ display: block;}
 
 </div>
 </div>
-
-
 
 <div class="swiftrevenue">
 <div class="container">
@@ -407,28 +401,28 @@ Advertisers</h2>
 <div class="row">
 <div class="col-md-3 col-sm-6">
 <div class="infoBox">
-<span class="iconsBox" style="background:url("{% static 'images/ad-img-1.png' %}");"></span>
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-1.png' %}');"></span>
 <h6>Coluptatem doloremque</h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6">
 <div class="infoBox">
-<span class="iconsBox" style="background:url("{% static 'images/ad-img-2.png' %}");"></span>
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-2.png' %}');"></span>
 <h6>Eiusmod tempor </h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6">
 <div class="infoBox">
-<span class="iconsBox" style="background:url("{% static 'images/ad-img-3.png' %}");"></span>
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-3.png' %}');"></span>
 <h6>Magna aliqua</h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6">
 <div class="infoBox">
-<span class="iconsBox" style="background:url("{% static 'images/ad-img-4.png' %}");"></span>
+<span class="iconsBox" style="background:url('{% static 'images/ad-img-4.png' %}');"></span>
 <h6>Perspiciatis unde</h6>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
 </div>
