@@ -59,7 +59,7 @@ function closeNav() {
 <li><a href="{% url 'home' %}">Affiliates</a></li>
 <li><a href="{% url 'advertisers' %}">Advertisers</a></li>
 <li><a href="{% url 'publishers' %}">Publishers</a></li>
-<li><a href="{% url 'company' %}">Company</a>
+<li><a href="{% url 'company' %}">Agency</a>
 <ul>
 <li><a href="{% url 'traffic' %}">Traffic</a></li>
 <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -106,7 +106,7 @@ Want to connect with the team?</h2>
 <p class="rightpdpr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <ul class="inlineBtns">
 <li><a href="" class="numbertext">12-345-6789</a></li>
-<li><a href="" class="link">Contact Us</a></li>
+<li><a href="{% url 'contact' %}" class="link">Contact Us</a></li>
 </ul>
 <div class="row">
 <div class="col-md-6 col-sm-12">
@@ -131,18 +131,18 @@ Want to connect with the team?</h2>
   <div class="container">
 <div class="logoAndLinks">
 <div class="container">
-<a href="./index.html" class="footer-logo"><img src="{% static 'images/rev-logo.png' %}" /></a>
+<a href="{% url 'home' %}" class="footer-logo"><img src="{% static 'images/rev-logo.png' %}" /></a>
 <div class="row">
 <div class="col-md-6 col-sm-6">
 <ul class="footerLinks">
-<li><a href="">Affiliate</a></li>
-<li><a href="./traffic.html">Traffic Types</a></li>
-<li><a href="./advertisers.html">Advertiser</a></li>
+<li><a href="{% url 'publishers' %}">Affiliate</a></li>
+<li><a href="{% url 'traffic' %}">Traffic Types</a></li>
+<li><a href="{% url 'advertisers' %}">Advertiser</a></li>
 <li><a href="">Career</a></li>
 <li><a href="">Knowledge Base</a></li>
-<li><a href="">About Us</a></li>
+<li><a href="{% url 'contact' %}">About Us</a></li>
 <li><a href="">Privacy Policy</a></li>
-<li><a href="./contact.html">Contact Support</a></li>
+<li><a href="{% url 'contact' %}">Contact Support</a></li>
 </ul>
 </div>
 <div class="col-md-6 col-sm-6">
